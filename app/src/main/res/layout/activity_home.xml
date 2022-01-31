@@ -18,4 +18,10 @@
         android:layout_height="wrap_content"
         android:text="ListView using ArrayAdapter"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBaseAdapter"
+        android:text="ListView using BaseAdapter"
+        />
 </LinearLayout>

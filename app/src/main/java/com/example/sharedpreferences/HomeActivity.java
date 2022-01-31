@@ -13,13 +13,21 @@ import android.widget.Button;
 import android.widget.ListView;
 
 public class HomeActivity extends AppCompatActivity {
-private Button btn1;
+private Button btn1, btn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
         btn1 = findViewById(R.id.btnArrayAdapter);
+        btn2 = findViewById(R.id.btnBaseAdapter);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, ListViewActivity2.class));
+            }
+        });
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
